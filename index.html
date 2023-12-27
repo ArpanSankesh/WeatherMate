@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherMate</title>
+    <link rel="icon" href="/asset/cloudy.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Nunito+Sans:opsz,wght@6..12,500&family=PT+Sans:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="asset/weather.png" alt="">
+            </div>
+
+            <div class="sidebar-items">
+                <div class="items">
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                    <p>Weather</p>
+                </div>
+                <div class="items">
+                    <i class="fa-solid fa-list"></i>
+                    <p>Cities</p>
+                </div>
+                <div class="items">
+                    <i class="fa-solid fa-map"></i>
+                    <p>Map</p>
+                </div>
+                <div class="items">
+                    <i class="fa-solid fa-sliders"></i>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="searchbar">
+                <input type="text" placeholder="Search for cities...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="weather-info">
+                <div class="weather-info-content">
+                    <h1 class="city">Madrid</h1>
+                    <p class="rain-percentage">Chance of rain: 0%</p>
+                    <div class="temp">
+                        <h1>31</h1>
+                        <p class="degree"> &deg; </p>
+                    </div>
+                </div>
+                <div class="weather-info-image">
+                    <img src="asset/sun.png" alt="">
+                </div>
+
+            </div>
+            <div class="forcast">
+                <h3>TODAY'S FORCAST</h3>
+
+                <div class="forcast-container">
+
+                    <div class="forcast-info">
+                        <h3 class="timming">6:00AM</h3>
+                        <img src="asset/cloud.png" alt="">
+                        <div class="degree">25<sup>&deg;</sup></div>
+                    </div>
+                    <div class="forcast-info">
+                        <h3 class="timming">9:00AM</h3>
+                        <img src="asset/cloudy1.png" alt="">
+                        <div class="degree">28<sup>&deg;</sup></div>
+                    </div>
+                    <div class="forcast-info">
+                        <h3 class="timming">12:00PM</h3>
+                        <img src="asset/sun.png" alt="">
+                        <div class="degree">31<sup>&deg;</sup></div>
+                    </div>
+                    <div class="forcast-info">
+                        <h3 class="timming">3:00PM</h3>
+                        <img src="asset/sun.png" alt="">
+                        <div class="degree">34<sup>&deg;</sup></div>
+                    </div>
+                    <div class="forcast-info">
+                        <h3 class="timming">6:00PM</h3>
+                        <img src="asset/sun.png" alt="">
+                        <div class="degree">33<sup>&deg;</sup></div>
+                    </div>
+                    <div class="forcast-info">
+                        <h3 class="timming">9:00PM</h3>
+                        <img src="asset/cloudy1.png" alt="">
+                        <div class="degree">30<sup>&deg;</sup></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="weather-info-air">
+                <h3>AIR CONDITIONS</h3>
+                <div class="extra-container">
+                    <div class="extra-content">
+                            <h3><i class="fa-solid fa-shower"></i> Humidity</h3>
+                        <h1>56%</h1>
+                    </div>
+                    <div class="extra-content">
+                        <h3><i class="fa-solid fa-wind"></i> Wind</h3>
+                        <h1>0.2km/h</h1>
+                    </div>
+                    <div class="extra-content">
+                        <h3><i class="fa-solid fa-droplet"></i> Chance of rain</h3>
+                        <h1>0%</h1>
+                    </div>
+                    <div class="extra-content">
+                        <h3><i class="fa-solid fa-sun"></i> UV Index</h3>
+                        <h1>3</h1>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="left-sidebar">
+            <h3>7-DAY FORCAST</h3>
+            <div class="week-container">
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+            <div class="weekly-forcast-container">
+                <h3 class="days">Today</h3>
+                <img src="asset/sun.png" alt="">
+                <h3 class="weather-text">Sunny</h3>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
