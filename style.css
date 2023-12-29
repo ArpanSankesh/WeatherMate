@@ -17,9 +17,7 @@
     min-height: 100vh;
     background-color: #fff;
     display: flex;
-    /* flex-wrap: wrap; */
-    padding: 0px 40px;
-    gap: 20px;
+    
 }
 
 .sidebar{
@@ -79,7 +77,6 @@
 }
 
 .content{
-    width: 55rem;
     height: 3rem;
     margin: 20px;
 }
@@ -181,6 +178,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
 }
 
 .forcast-info{
@@ -398,7 +396,7 @@
     .degree{
         font-size: 1.2rem;
     }
-
+    
   }
 
   @media(max-width:450px) {
@@ -433,8 +431,8 @@
   }
 
   @media(max-width:420px){
-    .main{
-        padding: 10px;
+    .content{
+        margin-left: 10px;
     }
     .extra-content{
         width: 8rem;
