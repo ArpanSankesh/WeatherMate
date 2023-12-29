@@ -14,11 +14,12 @@
 
 .main{
     width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: #fff;
     display: flex;
     /* flex-wrap: wrap; */
     padding: 0px 40px;
+    gap: 20px;
 }
 
 .sidebar{
@@ -114,9 +115,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 55rem;
+    width: 100%;
     height: 15rem;
-    margin: 1rem 0;
     padding: 20px 60px;
     border-radius: 15px;
 }
@@ -127,6 +127,10 @@
     line-height: 3.2rem;
 }
 
+.weather-info-content{
+    height: 100%;
+}
+  
 .weather-info p{
     font-size: 0.95rem;
     color: var(--secondary-color);
@@ -156,7 +160,7 @@
 
 
 .forcast{
-    width: 55rem;
+    width: 100%;
     height: 13rem;
     margin: 1rem 0;
     padding: 20px 30px;
@@ -172,7 +176,7 @@
 
 .forcast-container{
     /* background-color:aqua; */
-    width: 50rem;
+    width: 100%;
     margin: 20px 10px;
     display: flex;
     align-items: center;
@@ -204,7 +208,7 @@
 
 
 .weather-info-air{
-    width: 55rem;
+    width: 100%;
     height: 14rem;
     padding: 20px 40px 0 40px;
     background-color: var(--primary-color);
@@ -219,10 +223,11 @@
 
 .extra-container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 10px 40px ;
     /* margin-left: 60px ; */
-    width: 50rem;
+    width: 100%;
     height: 11rem;
 }
 
@@ -247,7 +252,7 @@
     backdrop-filter: blur(10px);
     width: 22rem;
     height: 48rem;
-    margin: 20px;
+    margin: 20px 0;
     border-radius: 25px;
     /* text-align: center; */
 }
@@ -284,40 +289,206 @@
     width: 30px;
 }
 
-/* General Styles */
-/* ... (Your existing styles) ... */
-
-/* Responsive adjustments */
-@media (max-width: 1300px) {
-    .main {
-        flex-wrap: wrap; /* Allow flex items to wrap */
+@media screen and (max-width: 1300px) {
+    .sidebar{
+        display: none;
+    }
+    .main{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        /* flex-direction: column; */
+    }
+    .content{
+        width: 100%;
     }
 
-    .content {
-        width: 100%; /* Adjust content width to fill the available space */
+    .extra-container{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .left-sidebar {
+        display: none;
+      }
+  }
+
+  @media(max-width:1020px){
+    .extra-container{
+        width: 100%;
+        margin-left:0;
+    }
+    .extra-container{
+        padding: 10px;   
+    }
+    .extra-content h3{
+        font-size: 1rem;
+    }
+    .extra-content h1{
+        font-size: 1.5rem;
+    }
+  }
+
+  @media(max-width:840px){
+    .extra-container{
+        padding: 10px;   
+    }
+    .extra-content h3{
+        font-size: 1rem;
+    }
+    .extra-content h1{
+        font-size: 1.5rem;
+    }
+  }
+
+  @media(max-width:780px){
+    .weather-info{
+        padding: 0 40px;
+    }
+    .weather-info .city{
+        font-size: 2rem;
+    }
+    .weather-info .rain-percentage{
+        font-size: 0.7rem;
+    }
+
+    .temp p{
+        margin-left:-10px;
+        font-size: 3rem;
+    }
+    .weather-info h1{
+        font-size: 4rem;
+    }
+    .weather-info-image {
+        width: 8rem;
+    }
+    .extra-content{
+        width: 15rem;
+    }
+    .extra-content h3{
+        font-size: 0.8rem;
+    }
+    .weather-info-air h3{
+        font-size: 0.8rem;
+    }
+    .extra-content h1{
+        font-size: 1.2rem;
+    }
+  }
+
+
+  @media(max-width:580px){
+    .weather-info{
+        height: 12rem;
+    }
+    .extra-content{
+        width: 10rem;
+    }
+    .forcast{
+        padding:20px 10px ;
+    }
+    .forcast-info{
+        width: 4rem;
+        height: 6rem;
+        padding-right: 20px;
+    }
+    .forcast h3{
+        font-size: 0.8rem;
+    }
+    .degree{
+        font-size: 1.2rem;
+    }
+
+  }
+
+  @media(max-width:450px) {
+    .forcast-info img{
+        width: 2rem;
+    }
+    .forcast h3{
+        font-size: 0.75rem;
+    }
+    .degree{
+        font-size: 1.15rem;
+    }
+    .forcast{
+        height: 10rem;
+    }
+    .weather-info-air{
+        height: 9.25rem;
+    }
+    .extra-container{
+        height: 8rem;
+    }
+    .weather-info-air h3{
+        font-size: 0.75rem;
+    }
+    .extra-content h3{
+        font-size: 0.75rem;
+    }
+    .extra-content h1{
+        font-size: 1rem;
+    }
+
+  }
+
+  @media(max-width:420px){
+    .main{
+        padding: 10px;
+    }
+    .extra-content{
+        width: 8rem;
+    }
+    .weather-info-air{
+        padding: 10px 20px;
+    }
+    .extra-content h1{
+        font-size: 1.15rem;
+    }
+    .forcast{
+        margin-top: 0;
+    }
+    .weather-info h1{
+        font-size: 2.5rem;
+    }
+    .temp p{
+        margin-left:-5px;
+        font-size: 2rem;
+    }
+    .weather-info-content{
+        margin-top:10px ;
+    }
+    .weather-info{
+        height: 10rem;
+    }
+    .temp{
         margin: 10px;
-        margin-left:0px;
-         /* Update margin for smaller screens */
     }
+    .weather-info-image{
+        width: 7rem;
+    }
+  }
 
-    /* Adjust other elements' styles as needed for responsiveness */
-    .sidebar {
-        display: none; /* Adjust height to accommodate content */
-    }
-    .left-sidebar {
-        display: none; 
-    }
+  @media(max-width:380px){
 
-
-    .weather-info,
-    .forcast,
-    .weather-info-air,
-    .extra-container,
-    .left-sidebar {
-        width: 100%; /* Utilize full width on smaller screens */
-        margin: 10px; /* Update margins for smaller screens */
+    .forcast-info{
+        height: 5rem;
+        padding-right: 5px;
     }
-}
+    .forcast-info img{
+        width: 1.55rem;
+    }
+    .forcast h3{
+        font-size: 0.6rem;
+    }
+    .forcast-container{
+        margin: 10px;
+    }
+    .degree{
+        font-size: 1rem;
+    }
+  }
+
 
 
 
