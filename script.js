@@ -42,7 +42,7 @@ async function getWether(city) {
     case 'Clouds':
         weatherImg.src = 'asset/cloudy1.png'
         break;
-    case 'rain':
+    case 'Rain':
         weatherImg.src = 'asset/raining.png'
         break;
     case 'Sunny':
