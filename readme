@@ -1,0 +1,45 @@
+base
+:
+"stations"
+clouds
+:
+{all: 75}
+cod
+:
+200
+coord
+:
+{lon: -0.1257, lat: 51.5085}
+dt
+:
+1703953948
+id
+:
+2643743
+main
+:
+{temp: 284.71, feels_like: 284.17, temp_min: 283.63, temp_max: 285.45, pressure: 999, …}
+name
+:
+"London"
+rain
+:
+{1h: 0.17}
+sys
+:
+{type: 2, id: 2075535, country: 'GB', sunrise: 1703923573, sunset: 1703951947}
+timezone
+:
+0
+visibility
+:
+6000
+weather
+:
+[{…}]
+wind
+:
+{speed: 5.14, deg: 190}
+[[Prototype]]
+:
+Object

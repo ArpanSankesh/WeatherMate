@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
+    /* font-family: 'Poppins', sans-serif;  */
 }
 
 .main{
@@ -127,6 +127,7 @@
 }
 
 .weather-info .city{
+    text-transform: capitalize;
     font-size: 2.5rem;
     color:var(--accent-color);
     line-height: 3.2rem;
