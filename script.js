@@ -22,10 +22,6 @@ async function getWether(city) {
   const weatherData = await fetch(`${url}`).then((response) => response.json());
   console.log(weatherData);
 
-  if(weatherData.cod === '404'){
-    alert("Location not Found! Please Enter a Correct Location");
-  }
-
   if (inputBox.value == "") {
     alert("Please enter the City!");
     return;
@@ -33,14 +29,15 @@ async function getWether(city) {
     currcity.innerHTML = `${weatherData.name}`;
   }
 
+  if (weatherData.cod === "404") {
+    alert("Location not Found! Please Enter a Correct Location");
+  }
+
   temperature.innerHTML = `${Math.round(weatherData.main.temp - 273.15)}°C`;
   humid.innerHTML = `${weatherData.main.humidity}%`;
   wind.innerHTML = `${weatherData.wind.speed} Km/h`;
   // rain.innerHTML = `${weatherData.rain['1h']}mm `;
   weatherType.innerHTML = `${weatherData.weather[0].main}`;
-
-
-  
 
   switch (weatherData.weather[0].main) {
     case "Clouds":
