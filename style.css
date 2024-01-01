@@ -366,6 +366,7 @@
     .weather-info h1{
         font-size: 4rem;
     }
+
     .weather-info-image {
         width: 8rem;
     }
@@ -388,6 +389,10 @@
     .weather-info{
         height: 12rem;
     }
+    .weather-info p{
+        font-size: 0.7rem;
+    }
+
     .extra-content{
         width: 10rem;
     }
@@ -412,6 +417,7 @@
     .forcast-info img{
         width: 2rem;
     }
+
     .forcast h3{
         font-size: 0.75rem;
     }
@@ -437,6 +443,9 @@
         font-size: 1rem;
     }
 
+    .weather-info p{
+        font-size: 0.6rem;
+    }
   }
 
   @media(max-width:420px){
@@ -493,6 +502,9 @@
     }
     .degree{
         font-size: 1rem;
+    }
+    .weather-info p{
+        font-size: 0.58rem;
     }
   }
 
